@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I’m Sorry 🤍</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #ffd6e8, #ffeef5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card {
+    background: white;
+    max-width: 700px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+  }
+
+  h1 {
+    color: #e75480;
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+
+  .heart {
+    font-size: 40px;
+    animation: pulse 1.5s infinite;
+  }
+
+  .btn {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background: #e75480;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    background: #d64570;
+  }
+
+  .final-msg {
+    display: none;
+    font-size: 22px;
+    color: #e75480;
+    margin-top: 25px;
+    animation: fadeIn 1s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="heart">🤍</div>
+
+  <h1>I’m truly sorry</h1>
+
+  <p>
+    I want to say this calmly, honestly, and from my heart.
+  </p>
+
+  <p>
+    I let my emotions get ahead of my patience, and in that moment,
+    I acted in a way I shouldn’t have. That was my mistake — not yours.
+  </p>
+
+  <p>
+    You never owed me an immediate reply, and I’m sorry if my reaction
+    made you feel uncomfortable or pressured in any way.
+  </p>
+
+  <p>
+    I value you, your space, and your feelings — more than my ego,
+    more than my frustration.
+  </p>
+
+  <p>
+    I don’t expect anything from you right now.
+    I just wanted you to know that I genuinely regret my behavior
+    and I’m learning from it.
+  </p>
+
+  <button class="btn" onclick="showFinal()">Read one last line 🤍</button>
+
+  <div class="final-msg" id="finalMsg">
+    Take all the time you need.  
+    I’ll be here — calmer, respectful, and sincere. 🌸
+  </div>
+</div>
+
+<script>
+function showFinal() {
+  document.getElementById("finalMsg").style.display = "block";
+}
+</script>
+
+</body>
+</html>
